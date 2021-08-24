@@ -1,0 +1,23 @@
+{# templates/list/index.html.twig #} {% extends 'base.html.twig' %} {% block
+    body %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card bg-light mb-3 mt-3">
+                    <div class="card-body">
+                        {% if app.user != null %}
+                            <div class="card-header">Email: {{ email }}</div>
+
+                        Ahoj {{ name }}
+                        {% else %}
+                    </div>
+                </div>
+                    <a href="{{ path('app_login') }}" class="btn btn-info">
+                        Přihlaš se abys viděl profil >></a
+                    >
+
+                {% endif %}
+            </div>
+        </div>
+    </div>
+{% endblock %}
